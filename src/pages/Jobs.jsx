@@ -36,10 +36,10 @@ export default function Stories() {
     });
 
     setStories(sorted);
-    setPage(1); // reset to page 1
+    setPage(1); 
   }
 
-  // pagination
+ 
   const start = (page - 1) * pageSize;
   const end = start + pageSize;
   const currentStories = stories.slice(start, end);
