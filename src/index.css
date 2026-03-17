@@ -1,0 +1,72 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 5s ease;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid navy;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px
+}
+
+.sort button {
+  margin: 5px;
+  background-color:lightblue;
+  border-radius: 20px;
+  
+}
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 5px;
+
+}
+
+h1 {
+  color:navy;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+p{
+  font-size: large;
+}
+button {
+  color: navy;
+  background-color:lightblue;
+  border-radius: 20px;
+  font-size:large;
+  padding: 8px;
+  margin: 30px;
+  font-size: 18px;
+}
+button:hover {
+  background-color: navy ;
+  color:white;
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
